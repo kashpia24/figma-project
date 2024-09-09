@@ -1,0 +1,437 @@
+/* ================ font links part start ============== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ---------------- font links part end ---------------- */
+/* ================ common css part start ============== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mons : "Montserrat", sans-serif;
+    --brand_color : #054C73;
+    --primary_color: #333333;
+    --secendary_color: #666666;
+}
+.container{
+    width: 1187px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.common_head h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--mons);
+    color: var(--primary_color);
+    text-align: center;
+}
+.common_head p{
+    width: 559px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--mons);
+    color: var(--secendary_color);
+    margin: 20px auto 0;
+    
+
+}
+
+/* ---------------- common css part end ---------------- */
+/* ================ nev bar part start ============== */
+#main_menu{
+padding-top: 43px;
+padding-bottom: 38px;
+}
+.menu_row{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_logo_col img{
+    width: 167px;
+}
+.menu_text_col ul{
+    display: flex;
+    gap: 73px;
+}
+.menu_text_col ul li a{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--mons);
+    color: var(--primary_color);
+    position: relative;
+}
+.menu_text_col ul li a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--brand_color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.menu_text_col ul li a:hover::before{
+    transform: scale(1);
+    width: 100%;
+}
+/* ---------------- nev bar part end ---------------- */
+/* ================ banner part start ============== */
+#banner{
+    background: url("../images/banner.png");
+    padding-top: 155px;
+    padding-bottom: 151px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner_text_part{
+    display: flex;
+    justify-content: end;
+}
+.banner_text_button{
+    width: 643px;
+    border-radius: 10px;
+    background: #DFE9F4;
+    padding: 37px 58px 41px 39px;
+}
+.banner_text_button h5{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--mons);
+    color: var(--primary_color);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.banner_text_button h1{
+    width: 421px;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: var(--mons);
+    color: var(--brand_color)
+    
+}
+.banner_text_button p{
+    width: 546px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--mons);
+    color: var(--primary_color);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 39px;
+}
+.banner_text_button a{
+    background: var(--brand_color);
+    border-radius: 50px;
+    padding: 25px 72px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--mons);
+    color: #FFFFFF;
+    transition: all linear .4s;
+   
+}
+.banner_text_button a:hover{
+    background: black;
+    border-radius: 50px ;
+}
+/* ---------------- banner part end ---------------- */
+/* ================ supports part start ============== */
+#suppots{
+    padding-top: 46px;
+    padding-bottom: 49px;
+    background: #F2F5FF;
+}
+.supports_row{
+    display: flex;
+    justify-content: space-between;
+}
+.singel_col{
+    display: flex;
+    gap: 27px;
+}
+.support_img img{
+    width: 83px;
+}
+.support_text h2{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--mons);
+    color: var(--primary_color);
+}
+.support_text p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--mons);
+    color: var(--primary_color);
+}
+/* ---------------- suppots part end ---------------- */
+/* ================ collections part start ============== */
+#collections{
+    padding-top: 60px;
+    padding-bottom: 65px;
+}
+.collections-image-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 88px;
+}
+.collection_image{
+    width: 355px;
+    height: 434px;
+    overflow: hidden;
+    transition: all linear .4s;
+}
+   
+.collection_image:hover{
+    margin-top: -38px;
+   
+}
+.collection1{
+    border-top-left-radius: 72px;
+}
+.collection3{
+    border-bottom-right-radius: 78px;
+}
+/* ---------------- collections part end ---------------- */
+/* ================ banner2 par start ============== */
+#banner2{
+    padding-top: 55px;
+    padding-bottom: 56px;
+    background: #F2F5FF;
+}
+
+.banner2_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner2_text_col{
+    width: 489px;
+ }
+.banner2_text_col h2{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--mons);
+    color: var(--primary_color);
+}
+.banner2_text_col p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var();
+    color: var(--primary_color);
+    line-height: 39px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.banner2_text_col a{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--mons);
+    background: var(--brand_color);
+    color: #FFFFFF;
+    padding: 24px 57px;
+    border-radius: 50px;
+    transition: all linear .4s;
+}
+.banner2_text_col a:hover{
+    background: #333333;
+    border-radius: 50px;
+}
+/* ---------------- banner2 part end ---------------- */
+/* ================ range part start ================ */
+#range{
+    padding-top: 55px;
+}
+.range_card_row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.range_singel_card{
+    width: 381px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.range_singel_card a{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var();
+    color: var(--primary_color);
+    margin: 30px auto 0;
+    transition: all linear .4s;
+    
+}
+.range_singel_card a:hover{
+    color: #FDBB57;
+}
+
+
+/* ---------------- range part end ---------------- */
+/* ================ work part start ================ */
+#work{
+    padding-top: 121px;
+    padding-bottom: 198px;
+}
+.work_card_row{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.work_single_card{
+    width: 381px;
+    border-radius: 11px;
+    overflow: hidden;
+}
+.singel_card_image{
+    position: relative;
+
+}
+.work_number{
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: 15px solid #FFFFFF;
+
+}
+    
+.work_number h2{
+   font-size: 24px;
+   font-weight: 700;
+   font-family: var(--mons);
+   color: #FFFFFF;
+   
+}
+.work_text h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--mons);
+    color: #000;
+    text-align: center;
+    margin-top: 75px;
+}
+.work_text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--mons);
+    color: var(--secendary_color);
+    text-align: center;
+    margin-top: 10px;
+}
+/* ---------------- work part end ---------------- */
+/* ================ mailing part start ================ */
+#mailList{
+    padding-top: 59px;
+    padding-bottom: 51px;
+    background: #F2F5FF;
+}
+#mailList .common_head p{
+    width: 514px;
+    text-align: center;
+    line-height: 39px;
+    margin-bottom: 50px;
+}
+.email_form .main_form{
+    width: 486px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid var(--brand_color);
+}
+.main_form{
+    margin: 0 auto;
+}
+.email_form .main_form input{
+    width: 327px;
+    height: 58px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--mons);
+    color: #011C42;
+
+}
+.email_form .main_form button{
+    width: 153px;
+    height: 70px;
+    background: var(--brand_color);
+    border: 1px solid #011C42;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--mons);
+    transition: all linear .4s;
+}
+.main_form button:hover{
+    background: #DFE9F4;
+}
+/* ---------------- mailing part end ---------------- */
+/* ================ footer part start ================ */
+#footer{
+    padding-top: 49px;
+    padding-bottom: 89px;
+    background: var(--brand_color);
+}
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_common_head{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--mons);
+    color: #FFFFFF;
+}
+.footer_text p{
+    width: 400px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--mons);
+    color: #FFFFFF;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    line-height: 35px;
+}
+.footer_images{
+    margin-top: 34px;
+    display: flex;
+    gap: 21px;
+    
+}
+.footer_images img{
+    width: 175px;
+    border-radius: 2px;
+}
+/* ---------------- footer part end ---------------- */
+
+
